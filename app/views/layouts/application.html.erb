@@ -12,20 +12,22 @@
 
     <header class="row">
       <div class="col-3">
-        <div class="circle">
-          <br />
-          You know
-          <br />
-          you need
-          <br />
-          to code
-        </div>
+        <%= link_to root_path, class: 'logo' do %>
+          <div class="circle">
+            <br />
+            You know
+            <br />
+            you need
+            <br />
+            to code
+          </div>
+        <% end %>
       </div>
       <div class="col-4 slogan">
         Providing Stoic advice since 2018
       </div>
       <div class="col-5 links">
-        <%= link_to 'Contribute', '#' %>
+        <%= link_to 'Contribute', new_quote_path %>
         <%= link_to 'About', '#' %>
       </div>
     </header>
@@ -40,7 +42,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <%= link_to "Blah", "#", class: 'next-quote' %>
+            <%= link_to "More Quotes Please!", root_path, class: 'next-quote' %>
           </div>
           <div class="col-6 foot-blurb">
             Proudly hacked in Chicago, IL by <a href="http://bpolach.com">Bob Polacheck</a><br />
