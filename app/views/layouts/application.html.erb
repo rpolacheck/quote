@@ -29,11 +29,25 @@
         <%= link_to 'About', '#' %>
       </div>
     </header>
-
     <hr />
-
     <br class="clear" />
 
-    <%= yield %>
+    <div class ="container">
+      <%= yield %>  
+    </div>
+
+    <div class= "footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <%= link_to "Blah", "#", class: 'next-quote' %>
+          </div>
+          <div class="col-6 foot-blurb">
+            Proudly hacked in Chicago, IL by <a href="http://bpolach.com">Bob Polacheck</a><br />
+          </div>
+        </div>
+      </div>
+    </div>
+    
   </body>
 </html>
